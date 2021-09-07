@@ -1,0 +1,16 @@
+.toDoItem {
+  margin: 12px;
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.toDoItem.completed {
+  opacity: 0.7;
+}
+
+.toDoItem input[type="checkbox"] {
+  margin-right: 8px;
+}

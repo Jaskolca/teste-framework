@@ -1,0 +1,35 @@
+.userCard {
+  margin: 12px 8px;
+  padding: 8px;
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.userCard.sticky {
+  position: sticky;
+  top: 10px;
+}
+
+.userCard hr {
+  display: block;
+  margin: 0.5em auto;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  width: 80%;
+}
+
+.userCard .avatar {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 8px;
+}
+
+.userCard .userName {
+  font-weight: bold;
+}

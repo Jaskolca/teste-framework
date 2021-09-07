@@ -1,0 +1,23 @@
+header {
+  padding: 20px;
+  background-color: #0a2f8c;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header h1 {
+  color: #fff;
+}
+
+header input[type="button"] {
+  position: absolute;
+  top: 30;
+  right: 20px;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-weight: bold;
+}

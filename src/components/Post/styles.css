@@ -1,0 +1,10 @@
+.postCard {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 12px;
+  padding: 8px;
+}
+
+.postCard p {
+  margin-top: 8px;
+}
