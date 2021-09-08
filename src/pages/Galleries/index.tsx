@@ -5,6 +5,7 @@ import UserCard from "../../components/UserCard";
 import api from "../../services/api";
 
 import Gallery from "../../components/Gallery";
+import PageMenu from "../../components/PageMenu";
 
 interface IGalleryParams {
   userId: string;
@@ -46,6 +47,7 @@ const Galleries: React.FC = () => {
     <div id="container">
       <Header title="Gallery" />
       <div id="content">
+        {!userId && <PageMenu />}
         {!!userId && <UserCard {...user} isPage />}
         <section className="pageContent">
           {galleries.map((gallery) => (

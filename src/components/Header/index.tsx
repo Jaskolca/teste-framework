@@ -1,5 +1,6 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FiHome } from "react-icons/fi";
 
 import "./styles.css";
 
@@ -9,11 +10,14 @@ interface IHeaderProps {
 }
 
 const Header: React.FC<IHeaderProps> = ({ title, isHome }) => {
-  const { goBack } = useHistory();
   return (
     <header>
       <h1>{title}</h1>
-      {!isHome && <input type="button" onClick={goBack} value="Voltar" />}
+      {!isHome && (
+        <Link to="/">
+          <FiHome />
+        </Link>
+      )}
     </header>
   );
 };

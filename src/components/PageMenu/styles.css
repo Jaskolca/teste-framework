@@ -1,0 +1,33 @@
+.pageMenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  color: #0a2f8c;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 12px 8px;
+  padding: 8px;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.menuItem svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 360px) {
+  .pageMenu {
+    flex-direction: column;
+  }
+
+  .menuItem {
+    margin: 12px auto;
+  }
+}

@@ -6,6 +6,7 @@ import api from "../../services/api";
 import "./styles.css";
 import Header from "../../components/Header";
 import UserCard from "../../components/UserCard";
+import PageMenu from "../../components/PageMenu";
 
 interface IAlbumParams {
   albumId: string;
@@ -82,6 +83,7 @@ const Album: React.FC = () => {
     <div id="container">
       <Header title="Album" />
       <div id="content">
+        {!userId && <PageMenu />}
         {!!userId && <UserCard {...user} isPage />}
         <section className="pageContent">
           <InfiniteScroll

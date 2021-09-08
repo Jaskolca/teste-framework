@@ -4,6 +4,7 @@ import api from "../../services/api";
 import Post from "../../components/Post";
 import Header from "../../components/Header";
 import UserCard from "../../components/UserCard";
+import PageMenu from "../../components/PageMenu";
 
 interface IPostParams {
   userId: string;
@@ -46,6 +47,7 @@ const Posts: React.FC = () => {
     <div id="container">
       <Header title="Posts" />
       <div id="content">
+        {!userId && <PageMenu />}
         {!!userId && <UserCard {...user} isPage />}
         <section className="pageContent">
           {posts.map((post) => (

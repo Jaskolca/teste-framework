@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import api from "../../services/api";
 import ToDo from "../../components/ToDo";
 import UserCard from "../../components/UserCard";
+import PageMenu from "../../components/PageMenu";
 
 interface IToDosParams {
   userId: string;
@@ -58,6 +59,7 @@ const ToDos: React.FC = () => {
     <div id="container">
       <Header title="To-Dos" />
       <div id="content">
+        {!userId && <PageMenu />}
         {!!userId && <UserCard {...user} isPage />}
         <section className="pageContent">
           {toDos.map((toDo) => (

@@ -3,17 +3,12 @@
   padding: 8px;
   background-color: #fff;
   width: 200px;
-  height: 250px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-}
-
-.userCard.sticky {
-  position: sticky;
-  top: 10px;
 }
 
 .userCard hr {
@@ -32,4 +27,30 @@
 
 .userCard .userName {
   font-weight: bold;
+}
+
+.userCard a {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  color: #0a2f8c;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 4px;
+  padding: 4px;
+  background-color: #f9f9f9;
+}
+
+.userCard a svg {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 500px) {
+  .userCard.sticky {
+    position: sticky;
+    top: 10px;
+  }
 }
